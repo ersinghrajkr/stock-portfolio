@@ -8,7 +8,7 @@ const appRoutes = require('./src/api/routes/routes')
 const bodyParser = require('body-parser')
 
 // Constants
-const PORT = 7000;
+const PORT = process.env.PORT || 7000;
 
 const app = express();
 // GLOBAL MIDDLEWARE
